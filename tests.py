@@ -25,7 +25,7 @@ output_df = df[df.columns[11:]]
 train_x, test_x, train_y, test_y = train_test_split(input_df, output_df, test_size=0.2)
 
 
-clf = MLPClassifier(solver='lbfgs', alpha=1e-5,hidden_layer_sizes=(5, 2), random_state=1)
+clf = MLPClassifier(solver='lbfgs', alpha=1e-5,hidden_layer_sizes=(5, 2,10), random_state=1)
 clf.fit(train_x, train_y)
 
 dat1 = clf.predict(test_x)
