@@ -1,18 +1,8 @@
-from sklearn.neural_network import MLPClassifier
-
-
-
 import numpy as np
-from sklearn.model_selection import train_test_split
-
-from sklearn.svm import LinearSVC
 import pandas as pd
-from sklearn.metrics import scorer
-from sklearn import metrics
 from sklearn.metrics import accuracy_score
-from sklearn.metrics import precision_score
-
-
+from sklearn.model_selection import train_test_split
+from sklearn.neural_network import MLPClassifier
 
 df = pd.read_excel(r'C:\Users\achituv\Desktop\ANN_input.xls') # data frame
 
@@ -41,7 +31,7 @@ print(clf.score(test_x, dat1))
 accuracy_score(test_y, dat1)
 
 # precision_score(y_true, y_pred, average=None)
-
+# TEST
 #
 # X = [[0., 0., 0, 0, 0], [1., 1., 1, 1, 1],[2., 2., 2, 2, 2],[3., 3., 3, 3, 3]]
 # y = [[0], [1],[2], [3]]
